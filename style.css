@@ -231,12 +231,7 @@ p {
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
-  /* body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
-  } */
   section {
     display: flex;
     flex-direction: column-reverse;
@@ -253,9 +248,10 @@ p {
     justify-content: center;
     align-items: center;
   }
-  #nav-bar {
-    margin: 0 180px;
-  }
+  /* #nav-bar {
+    margin: 0 180px; 
+    max-width: 50%;
+  } */
 
   .img-responsive {
     display: block;
@@ -266,5 +262,6 @@ p {
   }
   #description {
     margin: 0;
+    width: 80%;
   }
 }
