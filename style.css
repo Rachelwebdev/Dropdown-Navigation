@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(0, 0%, 98%);
+  font-family: "Epilogue", sans-serif;
+  font-size: 13px;
+}
+
+/* Navigation bar */
+nav {
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* snap Logo */
+.logo {
+  margin-right: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: hsl(0, 0%, 41%);
+}
+
+a:hover {
+  cursor: pointer;
+  color: black;
+}
+
+li {
+  display: inline;
+}
+
+/* Left side of Nav bar */
+.nav-left {
+  display: flex;
+  padding: 10px;
+}
+
+.btn-dropdown {
+  border: none;
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(0, 0%, 41%);
+  font-family: "Epilogue", sans-serif;
+}
+
+.btn-dropdown:hover {
+  cursor: pointer;
+  color: black;
+}
+
+span {
+  margin-left: 5px;
+}
+span:hover {
+  cursor: pointer;
+}
+
+.nav-menu li {
+  margin-right: 20px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown content hidden by default */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: hsl(0, 0%, 41%);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* hover state of dropdown inks */
+.dropdown-content a:hover {
+  color: black;
+  cursor: pointer;
+}
+
+/* show the dropdown menu using js */
+.show {
+  display: block;
+}
+
+/* Right side of nav Bar */
+.nav-right {
+  padding: 10px;
+}
+.nav-right li {
+  margin-right: 20px;
+}
+
+.btn-register {
+  padding: 5px 15px;
+  border-radius: 10px;
+  border: 2px solid hsl(0, 0%, 41%);
+  color: hsl(0, 0%, 41%);
+}
+
+.btn-register:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+/* Main Content of Page */
+section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#description {
+  margin-top: 50px;
+  margin-left: 150px;
+  width: 40%;
+}
+
+h1 {
+  font-size: 70px;
+  margin-bottom: 40px;
+  margin-top: 60px;
+}
+
+p {
+  font-size: 18px;
+  color: hsl(0, 0%, 41%);
+  margin-bottom: 40px;
+}
+
+.btn-learn {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+/* Client logo @ botttom */
+
+.client-logo-container img {
+  margin-right: 30px;
+}
+/* Client destop image to the right */
+
+#main-img {
+  max-height: 70vh;
+  margin-right: 200px;
+  margin-top: 50px;
+}
+.img-responsive {
+  display: none;
+}
+
+/* Hamburger style */
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
+@media (min-width: 770px) and (max-width: 1084px) {
+  #description {
+    padding-right: 90px;
+    margin-right: 100px;
+    padding-left: 50px;
+  }
+  h1 {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 50%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-item {
+    margin: 20px 0;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  /* body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  } */
+  section {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  h1 {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 12px;
+  }
+  .client-logo-container {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #nav-bar {
+    margin: 0 180px;
+  }
+
+  .img-responsive {
+    display: block;
+    width: 50%;
+  }
+  #main-img {
+    display: none;
+  }
+  #description {
+    margin: 0;
+  }
+}

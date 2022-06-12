@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Dropdown Navigation</title>
+  </head>
+  <body>
+    <header id="main-container">
+      <nav id="nav-bar">
+        <div class="nav-left">
+          <div class="logo">
+            <a href="#"><img src="./logo.svg" alt="" /></a>
+          </div>
+          <div>
+            <ul class="nav-menu">
+              <li class="nav-item">
+                <div class="dropdown">
+                  <a href="#"
+                    ><button onclick="Feature()" class="btn-dropdown">
+                      Features
+                    </button> </a
+                  ><span class="arrow-down"
+                    ><img
+                      onclick="Feature()"
+                      src="./icon-arrow-down.svg"
+                      alt="#"
+                  /></span>
+                  <div id="myDropdownFeature" class="dropdown-content">
+                    <a href="#">Todo List</a>
+                    <a href="#">Calender</a>
+                    <a href="#">Reminders</a>
+                    <a href="#">Planning</a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="dropdown">
+                  <a href="#"
+                    ><button onclick="Company()" class="btn-dropdown">
+                      Company
+                    </button> </a
+                  ><span class="arrow-down"
+                    ><img
+                      onclick="Company()"
+                      src="./icon-arrow-down.svg"
+                      alt="#"
+                  /></span>
+                  <div id="myDropdownCompany" class="dropdown-content">
+                    <a href="#">History</a>
+                    <a href="#">Our Team</a>
+                    <a href="#">Blog</a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item"><a href="#">Careers</a></li>
+              <li class="nav-item"><a href="#">About</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="nav-right">
+          <ul class="nav-menu">
+            <li class="nav-item"><a class="login-link" href="#">Login</a></li>
+            <li class="nav-item">
+              <a href=""><button class="btn-register">Register</button></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+      <section>
+        <article id="description">
+          <div class="title">
+            <h1>Make remote work</h1>
+          </div>
+          <div class="text-desc">
+            <p>
+              Get your team in sync, no matter your location. Streamline
+              processes, create team rituals, and watch productivity soar.
+            </p>
+          </div>
+          <div class="btn">
+            <button class="btn-learn">Learn more</button>
+          </div>
+
+          <div class="client-logo-container">
+            <img src="./client-databiz.svg" alt="databiz logo" />
+            <img src="./client-audiophile.svg" alt="audiophile logo" />
+            <img src="./client-meet.svg" alt=" meet logo" />
+            <img src="./client-maker.svg" alt="maker logo" />
+          </div>
+        </article>
+        <img id="main-img" src="./image-hero-desktop.png" alt="" />
+        <img
+          class="img-responsive"
+          src="./image-hero-mobile.png"
+          alt="mobile version image"
+        />
+      </section>
+    </header>
+
+    <script src="script.js"></script>
+  </body>
+</html>
