@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Merriweather&display=swap");
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+.attribution {
+  margin-top: 30px;
+}
+/* 
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+} */
+
+body {
+  font-family: Kumbh Sans;
+  font-size: 12px;
+  background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container-white {
+  background-color: hsl(240, 9%, 93%);
+  border-radius: 10px;
+  width: 60%;
+  height: 80%;
+  position: relative;
+}
+.question {
+  color: hsl(237, 12%, 33%);
+  font-weight: 700;
+}
+
+.answer {
+  color: hsl(240, 6%, 50%);
+}
+
+.border-line {
+  border: 0.5px solid;
+}
+
+/* separating the image and FAQ area into two columns */
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  padding: 10px;
+}
+
+/* @media screen and (max-width: 375px) {
+  .column {
+    width: 100%;
+  }
+} */
+/* hide the answer */
+
+.question-section {
+  margin: 30px;
+  position: relative;
+}
+h1 {
+  margin: 50px;
+}
+
+.img-1 {
+  position: absolute;
+  top: 16%;
+  left: -8%;
+  position: relative;
+}
+.img-2 {
+  position: absolute;
+  bottom: 28%;
+  left: -10%;
+}
+
+.arrow {
+  position: absolute;
+  left: 90%;
+  top: 5%;
+}
+
+.arrow:hover {
+  cursor: pointer;
+}
+
+.question {
+  padding-bottom: 20px;
+}
+
+.question:hover {
+  cursor: pointer;
+  color: hsl(14, 88%, 65%);
+}
+.arrow {
+  transform: rotate(0deg);
+}
+
+.display {
+  transform: rotate(180deg);
+}
+.answer {
+  display: none;
+}
+
+.show {
+  display: block;
+}
