@@ -152,6 +152,14 @@ p {
   margin-bottom: 50px;
 }
 
+.btn-learn:hover {
+  background-color: rgb(205, 193, 18);
+  color: black;
+  border: transparent;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
 /* Client logo @ botttom */
 
 .client-logo-container img {
